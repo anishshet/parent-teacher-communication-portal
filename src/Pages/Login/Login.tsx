@@ -1,5 +1,16 @@
 import './style.css'
+import { useState } from 'react';
 export default function Login() {
+    const [isActive, setIsActive] = useState(false);
+
+    const handleRegisterClick = () => {
+      setIsActive(true);
+    };
+  
+    const handleLoginClick = () => {
+      setIsActive(false);
+    };
+  
     return (
         <div className="container" id="container">
             <div className="form-container sign-up">
